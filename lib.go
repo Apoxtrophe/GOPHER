@@ -32,3 +32,13 @@ func (g *Game)reset_arr2(){
 		}
 	}
 }
+
+func clamp(val, min, max int) int {
+    if val < min {
+        return min
+    } else if val > max {
+        return max
+    } else {
+        return val
+    }
+}
