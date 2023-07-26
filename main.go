@@ -24,6 +24,7 @@ type Game struct {
 }
 
 func (g *Game) Update() error {
+	g.UpdateCells() 
 	return nil
 }
 

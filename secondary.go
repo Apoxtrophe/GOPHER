@@ -11,6 +11,7 @@ func NewGame() *Game{
 	g := &Game{}
 	g.arr1 = make([][]int, screenHeight/PixelSize)
 	g.arr2 = make([][]int, screenHeight/PixelSize)
+	g.pixels = make([]byte, screenWidth * screenHeight * 4)
 	for i := range g.arr1 {
 		g.arr1[i] = make([]int, screenWidth/PixelSize)
 		g.arr2[i] = make([]int, screenWidth/PixelSize)
